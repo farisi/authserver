@@ -30,3 +30,7 @@ spring:
               scopes:
                 - openid
                 - articles.read
+  datasource:
+    url: jdbc:mysql://localhost:3306/backoffice?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: 
