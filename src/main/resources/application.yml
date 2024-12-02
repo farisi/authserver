@@ -5,8 +5,9 @@ logging:
   level:
     root: INFO
     org.springframework.web: INFO
-    org.springframework.security: INFO
-    org.springframework.security.oauth2: INFO
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
+    org.springframework.security.oauth2.server: DEBUG
 
 spring:
   security:
@@ -34,3 +35,4 @@ spring:
     url: jdbc:mysql://localhost:3306/backoffice?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
