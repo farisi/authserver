@@ -10,28 +10,7 @@ logging:
     org.springframework.security.oauth2.server: DEBUG
 
 spring:
-  security:
-    oauth2:
-      authorizationserver:
-        issuer: "http://auth-server.test:9000"
-        client:
-          oidc-client:
-            registration:
-              client-id: "oidc-client"
-              client-secret: "{noop}secret"
-              client-authentication-methods:
-                - "client_secret_basic"
-              authorization-grant-types:
-                - "authorization_code"
-                - "refresh_token"
-              redirect-uris:
-                - "http://127.0.0.1:8080/login/oauth2/code/articles-client-oidc"
-              post-logout-redirect-uris:
-                - "http://127.0.0.1:8080/"
-              scopes:
-                - "openid"
-                - "articles.read"
-            require-authorization-consent: true
+  
   datasource:
     url: jdbc:mysql://localhost:3306/backoffice?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
     username: root
